@@ -35,6 +35,7 @@ public class mysqldbconnections {
 			con.close();  
 			}catch(Exception e){ System.out.println(e);}  
 			System.out.println("repo check");
+			System.out.println("repo check2");
 	}
 
 	public static void main(String[] args) {
