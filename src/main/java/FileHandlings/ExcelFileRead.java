@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelFileRead {
 	
-	String filepath = "C:\\Users\\kumar\\eclipse-workspace\\FitaAnnanagarSeleniumAugust2024\\Input\\FitaStudents.xlsx";
+	String filepath = System.getProperty("user.dir")+"\\Input\\FitaStudents.xlsx";
 	public void readData() throws IOException
 	{
 		//File F = new File(filepath);
