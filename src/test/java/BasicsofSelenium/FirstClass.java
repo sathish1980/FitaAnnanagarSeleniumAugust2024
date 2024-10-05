@@ -36,6 +36,7 @@ public class FirstClass {
 		
 		browser.findElement(By.cssSelector("button._42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy[data-testid='royal_login_button']")).click();
 		 
+		browser.findElement(By.xpath("//input[@type='text']")).sendKeys("sathish kumar ");
 	}
 
 }
