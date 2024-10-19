@@ -26,7 +26,7 @@ public class ListConcepts {
 		WebDriverWait wait =  new WebDriverWait(browser,Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='j_idt87:country_items']//li[last()]")));
 		
-		for(WebElement eachcountry:allcountry)
+		/*for(WebElement eachcountry:allcountry)
 		{
 			String actualCountry = eachcountry.getText();
 			if(expectedCountry.equalsIgnoreCase(actualCountry))
@@ -35,6 +35,16 @@ public class ListConcepts {
 				break;
 			}
 			
+		}*/
+		
+		for(int i=1;i<=allcountry.size();i++)
+		{
+			String actualCountry =browser.findElement(By.xpath("//*[@id='j_idt87:country_items']//li["+i+"]")).getText();
+			if(expectedCountry.equalsIgnoreCase(actualCountry))
+			{
+				browser.findElement(By.xpath("//*[@id='j_idt87:country_items']//li["+i+"]")).click();
+				break;
+			}
 		}
 		
 	}
