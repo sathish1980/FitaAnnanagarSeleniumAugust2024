@@ -3,11 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BasicsofSelenium.MouseActions">
+      <class name="TestNGAnnotation.TestNGFirstClass">
         <methods>
-          <include name="launch"/>
+          <include name="Testcase1"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="Testcase2"/>
+          <include name="afterSuite"/>
+          <include name="beforeclass"/>
+          <include name="Testcase3"/>
+          <include name="Testcase4"/>
+          <include name="beforeSuite"/>
+          <include name="afterclass"/>
+          <include name="AfterTest"/>
+          <include name="beforemethod"/>
         </methods>
-      </class> <!-- BasicsofSelenium.MouseActions -->
+      </class> <!-- TestNGAnnotation.TestNGFirstClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
