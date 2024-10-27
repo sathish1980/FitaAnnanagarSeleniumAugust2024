@@ -56,7 +56,7 @@ public class MakeMyTripFlightSearch extends Browsers {
 	 * Date: 27/10/2024
 	 *
 	 */
-	@Test(priority=0,dataProvider="GetValidSearchTestdata")
+	@Test(priority=0,dataProvider="GetValidSearchTestdata",dataProviderClass=DataProviderAnnotaions.class)
 	public void ValidSeach(String from, String to, String date)
 	{
 		
@@ -147,9 +147,5 @@ public class MakeMyTripFlightSearch extends Browsers {
 	}
 	
 	
-	@DataProvider
-	public Object[][] GetValidSearchTestdata() throws IOException
-	{
-		return ExcelfileRead.ExcelRead("Validsearch");
-	}
+	
 }
