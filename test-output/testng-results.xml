@@ -2,33 +2,107 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-26T08:58:03 IST" name="Suite" finished-at="2024-10-26T08:58:03 IST" duration-ms="52">
+  <suite started-at="2024-10-27T09:54:41 IST" name="Default suite" finished-at="2024-10-27T09:54:56 IST" duration-ms="15178">
     <groups>
-      <group name="Sanity">
-        <method signature="TestNGFirstClass.Testcase2()[pri:0, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" name="Testcase2" class="TestNGAnnotation.TestNGFirstClass"/>
-        <method signature="TestNGFirstClass.Testcase1()[pri:1, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" name="Testcase1" class="TestNGAnnotation.TestNGFirstClass"/>
-        <method signature="TestNGFirstClass.Testcase4()[pri:2, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" name="Testcase4" class="TestNGAnnotation.TestNGFirstClass"/>
-      </group> <!-- Sanity -->
-      <group name="SIT">
-        <method signature="TestNGFirstClass.Testcase2()[pri:0, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" name="Testcase2" class="TestNGAnnotation.TestNGFirstClass"/>
-        <method signature="TestNGFirstClass.Testcase4()[pri:2, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" name="Testcase4" class="TestNGAnnotation.TestNGFirstClass"/>
-      </group> <!-- SIT -->
     </groups>
-    <test started-at="2024-10-26T08:58:03 IST" name="Test" finished-at="2024-10-26T08:58:03 IST" duration-ms="52">
-      <class name="TestNGAnnotation.TestNGFirstClass">
-        <test-method signature="Testcase2()[pri:0, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" started-at="2024-10-26T08:58:03 IST" name="Testcase2" finished-at="2024-10-26T08:58:03 IST" duration-ms="13" status="PASS">
+    <test started-at="2024-10-27T09:54:41 IST" name="Default test" finished-at="2024-10-27T09:54:56 IST" duration-ms="15178">
+      <class name="Testcase.MakeMyTripFlightSearch">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:39 IST" name="Launch" finished-at="2024-10-27T09:54:41 IST" duration-ms="1823" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase2 -->
-        <test-method signature="Testcase1()[pri:1, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" started-at="2024-10-26T08:58:03 IST" name="Testcase1" finished-at="2024-10-26T08:58:03 IST" depends-on-methods="TestNGAnnotation.TestNGFirstClass.Testcase2" duration-ms="2" status="PASS">
+        </test-method> <!-- Launch -->
+        <test-method is-config="true" signature="LauchtheApplication()[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:41 IST" name="LauchtheApplication" finished-at="2024-10-27T09:54:43 IST" duration-ms="1832" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase1 -->
-        <test-method signature="Testcase4()[pri:2, instance:TestNGAnnotation.TestNGFirstClass@59474f18]" started-at="2024-10-26T08:58:03 IST" name="Testcase4" finished-at="2024-10-26T08:58:03 IST" depends-on-methods="TestNGAnnotation.TestNGFirstClass.Testcase2" duration-ms="1" status="PASS">
+        </test-method> <!-- LauchtheApplication -->
+        <test-method is-config="true" signature="SetValues()[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:43 IST" name="SetValues" finished-at="2024-10-27T09:54:43 IST" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase4 -->
-      </class> <!-- TestNGAnnotation.TestNGFirstClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- SetValues -->
+        <test-method signature="ValidSeach(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:44 IST" name="ValidSeach" data-provider="GetValidSearchTestdata" finished-at="2024-10-27T09:54:48 IST" duration-ms="4596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PNQ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidSeach -->
+        <test-method is-config="true" signature="WriteInReport(org.testng.ITestResult)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:48 IST" name="WriteInReport" finished-at="2024-10-27T09:54:48 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidSeach status=SUCCESS method=MakeMyTripFlightSearch.ValidSeach(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteInReport -->
+        <test-method signature="ValidSeach(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:48 IST" name="ValidSeach" data-provider="GetValidSearchTestdata" finished-at="2024-10-27T09:54:53 IST" duration-ms="5079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PNQ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BLR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidSeach -->
+        <test-method is-config="true" signature="WriteInReport(org.testng.ITestResult)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:53 IST" name="WriteInReport" finished-at="2024-10-27T09:54:54 IST" duration-ms="126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidSeach status=SUCCESS method=MakeMyTripFlightSearch.ValidSeach(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteInReport -->
+        <test-method signature="SameCitySearch()[pri:1, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:54 IST" name="SameCitySearch" finished-at="2024-10-27T09:54:56 IST" duration-ms="2050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SameCitySearch -->
+        <test-method is-config="true" signature="WriteInReport(org.testng.ITestResult)[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:56 IST" name="WriteInReport" finished-at="2024-10-27T09:54:56 IST" duration-ms="300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SameCitySearch status=SUCCESS method=MakeMyTripFlightSearch.SameCitySearch()[pri:1, instance:Testcase.MakeMyTripFlightSearch@5b12b668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteInReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.MakeMyTripFlightSearch@5b12b668]" started-at="2024-10-27T09:54:56 IST" name="tearDown" finished-at="2024-10-27T09:54:56 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Testcase.MakeMyTripFlightSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

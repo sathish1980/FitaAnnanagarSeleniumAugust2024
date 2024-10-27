@@ -3,22 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGAnnotation.TestNGFirstClass">
+      <class name="Testcase.MakeMyTripFlightSearch">
         <methods>
-          <include name="Testcase1"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="Testcase2"/>
-          <include name="afterSuite"/>
-          <include name="beforeclass"/>
-          <include name="Testcase3"/>
-          <include name="Testcase4"/>
-          <include name="beforeSuite"/>
-          <include name="afterclass"/>
-          <include name="AfterTest"/>
-          <include name="beforemethod"/>
+          <include name="tearDown"/>
+          <include name="LauchtheApplication"/>
+          <include name="ValidSeach"/>
+          <include name="SameCitySearch"/>
+          <include name="WriteInReport"/>
+          <include name="Launch"/>
+          <include name="SetValues"/>
         </methods>
-      </class> <!-- TestNGAnnotation.TestNGFirstClass -->
+      </class> <!-- Testcase.MakeMyTripFlightSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
